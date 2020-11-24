@@ -6,6 +6,7 @@ import Statistics from './components/Statistics/Statistics.js';
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions.js';
 // css
 import Section from './components/Section/Section.js';
+import './bases.css';
 
 export default class App extends Component {
   state = {
@@ -54,5 +55,3 @@ export default class App extends Component {
     );
   }
 }
-
-// {title && <h2 className={classes.title}>{title}</h2>}

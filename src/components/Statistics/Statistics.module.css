@@ -1,0 +1,12 @@
+.Bad {
+  color: red;
+}
+.Neutral {
+  color: lightgreen;
+}
+.Good {
+  color: green;
+}
+.positivePercentage {
+  color: olivedrab;
+}
