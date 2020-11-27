@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import Notification from './components/Notification/Notification.js';
-// import Feedback from './components/Feedback/feedback.module.css';
 import Statistics from './components/Statistics/Statistics.js';
-// css
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions.js';
-// css
 import Section from './components/Section/Section.js';
 import './bases.css';
 
@@ -27,7 +24,9 @@ export default class App extends Component {
   };
   countPositiveFeedbackPercentage = () => {
     const { good } = this.state;
-    let positivePercentage = (good / this.countTotalFeedback()) * 100;
+    let positivePercentage = Math.round(
+      (good / this.countTotalFeedback()) * 100,
+    );
     return positivePercentage;
   };
 
